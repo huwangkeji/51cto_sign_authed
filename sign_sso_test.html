@@ -1,0 +1,650 @@
+﻿    <!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+	   
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="baidu-site-verification" content="codeva-OtYL2OjDdL" />
+				<meta charset="UTF-8">
+		<meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="c1BvQ0I4QXE9aV86CVoiQSkcHBMybhUBPTNYcDJbC0VECBokKk8qOg==">
+		<title>51CTO技术家园</title>
+		<link rel="shortcut icon" href="https://static2.51cto.com/home/web/images/favicon.ico?v=1.0.0" type="image/x-icon">	
+		<script src="https://static5.51cto.com/home/web/js/jquery.min.js?v=10001"></script>
+<script src="https://static4.51cto.com/home/web/js/51cto.js?v=10001"></script>
+<script src="https://static2.51cto.com/home/web/js/public/msg.js?v=10003"></script>
+<script src="https://static5.51cto.com/home/web/js/jquery.message.js?v=10001"></script>
+<script src="https://static4.51cto.com/home/web/js/yii/yii.js?v=10001"></script>
+<script src="https://static5.51cto.com/home/web/js/yii/yii.activeForm.js?v=10001"></script>
+<script src="https://static4.51cto.com/home/web/js/yii/yii.validation.js?v=10001"></script>    <!-- 预加载gif图 -->
+	<link rel="preload" href="https://s1.51cto.com/images/blog/201902/18/8cef164920182ec17d7bf92cf48c00bc.gif" as="image" aria-label="背景图"/>
+	</head>
+    <body class="pc_body">		
+<div class="index_bg">
+ <div class="sign">
+    <a class="logo" href="https://www.51cto.com">
+        <img src="https://s2.51cto.com/edu/train/logos/index-logo3.png"/>
+    </a>
+    <div class="ran_pic login-page-ran-pic">
+        <img src="https://s2.51cto.com//images/202112/03/9ba23eeda9e29003a0a9ecd43bb83403.png"/>
+    </div>
+
+      <a class="login-page-ad-box" target="_blank"><img src="" alt="广告"></a>
+  
+  <div class="loginWrap page login-page-wrap">
+    
+<link href="https://static2.51cto.com/home/web/css/new_login/base.min.css?v=1.9.52" rel="stylesheet">
+<link href="https://static2.51cto.com/home/web/css/new_login/index.min.css?v=1.9.52" rel="stylesheet">
+<div class="loginPic zxflogoPic clearfix">
+
+        <!-- 下载弹框 -->
+        <div class="download_qrcode">
+            <img src="https://s2.51cto.com/edu/train/logos/index-logo6.png">
+            <p>扫码下载</p>
+            <p>安卓/iOS客户端</p>
+        </div>
+
+        <div class="loginBord" id="login-base">
+            <div class="loginTit">
+                <span class="login-type-switch login-type-switch-active" onclick="changeTab(0,this)">微信登录</span>
+                <span class="login-type-switch" onclick="changeTab(1,this)">短信登录</span>
+                <span class="login-type-switch" onclick="changeTab(2,this)">密码登录</span>
+            </div>
+        <div id="login-input" style="display:none;">
+           <form id="login-form" action="/index?reback=https%3A%2F%2Fblog.51cto.com%2Fuser%2Fsign&amp;iframe=0&amp;is_go_to_user_set_mobile=1" method="post" style="display:none;">
+<input type="hidden" name="_csrf" value="c1BvQ0I4QXE9aV86CVoiQSkcHBMybhUBPTNYcDJbC0VECBokKk8qOg==">            <div class="inpBox textbox_ui user">
+                <div class="form-group field-loginform-username">
+<label class="control-label" for="loginform-username"></label>
+<input type="text" id="loginform-username" class="checkAccount" name="LoginForm[username]" maxlength="30" placeholder="用户名/邮箱/手机" autocomplete="off">
+
+<div class="custom invalid error_9o8Kl" style="display:none"></div>
+</div>                <img class="cleanInput ac" src="https://static2.51cto.com/home/web/images/new_login/close.png"/>
+                <span class="error"></span>
+            </div>
+            <div class="inpBox textbox_ui pass zxfpass">
+                <div class="form-group field-loginform-password">
+<label class="control-label" for="loginform-password"></label>
+<input type="password" id="loginform-password" class="checkPassword" name="LoginForm[password]" maxlength="20" placeholder="密码">
+
+<div class="custom invalid error_9o8Kl" style="display:none"></div>
+</div>                <img class="cleanInput" src="https://static2.51cto.com/home/web/images/new_login/close.png"/>
+                <img class="openeye" onclick="changePasswordType(this)" src="https://static2.51cto.com/home/web/images/new_login/eye.png"/>
+                <img class="closeeye" onclick="changePasswordType(this)" src="https://static2.51cto.com/home/web/images/new_login/close_eye.png"/>
+                <span class="error"></span>
+            </div>
+          
+		    
+
+            <div class="clearfix zxfDl">
+                <a class="fr" href="/forgot-password/find-password?from_service=blog&reback=https://blog.51cto.com/user/sign" target="_blank">忘记密码</a>
+                <input type="button" class="loginbtn_P fl" name="login-button" value="登 录">
+                <input type="hidden" name="show_qr" value="0" >
+            </div>  
+            <div id="errorMsg"></div>
+        </form>
+          <!-- 新增免密登录  -->
+            <form id="unclassified-form" action="/index?tab=mobile&amp;reback=https%3A%2F%2Fblog.51cto.com%2Fuser%2Fsign&amp;iframe=0&amp;is_go_to_user_set_mobile=1" method="post" style="display:none;">
+<input type="hidden" name="_csrf" value="c1BvQ0I4QXE9aV86CVoiQSkcHBMybhUBPTNYcDJbC0VECBokKk8qOg==">            <div class="inpBox textbox_ui user">
+                <div class="form-group field-loginform-lmobile">
+                    <label class="control-label" for="loginform-lmobile"></label>
+                    <input type="text" id="loginform-lmobile" maxlength="11" class="form-control" oninput="value=value.replace(/[^\d]/g,'')" autocomplete="off" name="LoginForm[lmobile]" value="" placeholder="请输入手机号">
+                    <div class="custom invalid error_9o8Klmobile" style="display:block"></div>
+                </div>
+            </div>
+          <!-- 阿里验证弹框 -->
+            <div class="ali_box">
+                <p>智能验证</p>
+                <span class="close_ali_btn">
+                    <img src="https://static2.51cto.com/home/web/images/new_login/close.png"/>
+                </span>
+                <div id="ali_captcha_unclassified" class="nc-container"></div>
+                <div class="ali-unclassified-error invalid" style="display:none;color:red;margin:5px"></div>
+            </div>
+            <div class="inpBox textbox_ui" style="margin-top: 26px;">
+                <div class="form-group field-loginform-lcode">
+                    <label class="control-label" for="loginform-lcode"></label>
+                    <input type="text" id="loginform-lcode" class="form-control" oninput="value=value.replace(/[^\d]/g,'')" autocomplete="off" maxlength="6" name="LoginForm[lcode]" value="" placeholder="请输入短信验证码">
+                                            <div class="custom invalid error_9o8Klcode" style="display:block"></div>
+                                    </div>
+                <button name="" type="button" class="input_yzm right" value="发送验证码" id="send_sms_code_unclassified">发送验证码</button>
+            </div>
+            <div class="clearfix zxfDl logon_btn">
+                <input type="button" class="unclassified_btn fl" id="login-unclassified"  name="unclassified-button" value="登录/注册"  >
+                <input type="hidden" name="show_qr" value="0" >
+            </div>
+            <div id="errorMsg"></div>
+            
+            </form>            <div class="agreement">
+                <span class="check-span" id="agree-check"></span>
+                <input type="checkbox" style="display:none" name="agree" id="agree"/>
+                <label for="agree" class="agreement_label">
+                    <span>我已经认真阅读并同意
+                        <a href="https://edu.51cto.com/center/other/service" target="_blank">《51CTO用户协议》</a>
+                        <a href="https://edu.51cto.com/center/other" target="_blank">《51CTO隐私政策》</a>
+                    </span>
+                </label>
+                <div class="agreement_error error"></div>
+            </div>
+
+                        
+
+            <div id="login_type_group" class="login_type_group phone no_agreement mobile_btn" style="display:none;">
+                <div class="login_type_title">其他登录方式</div>
+                                                    <span onclick="third_login('/third-party/auth?type=qq')"><img src="https://s2.51cto.com/edu/home/login/icon_qq.png"/></span>
+                                                    <span onclick="third_login('/third-party/auth?type=sina')"><img src="https://s2.51cto.com/edu/home/login/icon_weibo.png"/></span>
+                            </div>
+            </div>
+            <div id="login-wechat" class="new-login-wechat">
+                                <!--20160530检测到微信开始-->
+                <div class="code_wxbox">
+                    <div class="wx_img" style="padding: 0px;">
+                        <img src=""  class="qr-img" alt="二维码">
+                        <div class="code-wechat-tips">
+                            <img src="https://s2.51cto.com/edu/home/login/icon_wechat_1.png" alt="微信">
+                            <span>微信扫码登录</span>
+                        </div>
+                    </div>
+                    <div class="wx_10s" style="display:none">
+                    <span class="wx_losetxt">二维码已失效 </span>
+                    <a href="javascript:void(0);" onclick="getQrImg()">
+                            <img src="https://static2.51cto.com/home/web/images/new_login/refresh.png"/>
+                            <span>点击刷新</span>
+                        </a>
+                    </div>
+                    <!-- <div class="wx_10s" style="display: block;">
+                        <span class="wx_losetxt">二维码已失效 </span>
+                        <a href="javascript:void(0);" onclick="getQrImg()">
+                            <img src="https://linestatic.51cto.com/home/web/images/new_login/refresh.png">
+                            <span>点击刷新</span>
+                        </a>
+                    </div> -->
+                    <div class="hidetips">
+                        <img src="/public/images/weixin_logintip.png" width="258" height="240"/>
+                    </div>
+                </div>
+                <div class="wx_0s">
+                                            <div class="ts"><img src="https://static2.51cto.com/home/web/images/new_login/wechat1.png"/>请使用<span>微信扫描</span>二维码登录</div>
+                                    </div>
+                                    <div class="login_type_group" id="login_type_group_wx">
+                        <div class="login_type_title">其他登录方式</div>
+                                                                            <span onclick="third_login('/third-party/auth?type=qq')"><img src="https://s2.51cto.com/edu/home/login/icon_qq.png"/></span>
+                                                                            <span onclick="third_login('/third-party/auth?type=sina')"><img src="https://s2.51cto.com/edu/home/login/icon_weibo.png"/></span>
+                                            </div>
+                
+            </div>
+        </div>
+                <!-- 下方下载app框 -->
+        
+    </div>
+        </div>
+        <!--注册新增框-->
+        <div class="loginBord" id="register-wechat" style="">
+            <div class="loginTit">
+                <div class="tosignup"><a href="javascript:void(0);" onclick="wechat_login()" class="back_account" style="color: #333;font-size: 14px;">登录</a> </div>
+            <h1>注册51CTO</h1>
+        </div>
+            <!--20160530检测到微信开始-->
+            <div class="code_wxbox">
+                <div class="wx_img" style="padding: 0px;"><img src="" width="205" height="205" class="qr-img" alt="二维码"></div>
+                <div class="wx_0s">
+                    <div class="ts">请使用微信扫描二维码快捷注册</div>
+                </div>
+                <div class="wx_10s" style="display:none">
+                   <span class="wx_losetxt">二维码失效，请点击 <a href="javascript:void(0);" onclick="getQrImg()">刷新二维码</a></span>
+                </div>
+                <div class="hidetips"><img src="/public/images/weixin_logintip.png" width="258" height="240"></div>
+            </div>
+            <div class="userPassLogin back_account"><a href="/user/register?from_service=blog&reback=https%3A%2F%2Fblog.51cto.com%2Fuser%2Fsign&regtype=mobile">手机号注册</a></div>
+        </div>
+        </div>
+    </div>
+<div class="loginPageBaseVar" edu-url="https://edu.51cto.com/"></div>
+<script src="https://www.51cto.com/navTop.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/sd/ncpc/nc.js?t=2015052012"></script>
+<script src="https://static2.51cto.com/home/web/js/new_login/base.js?v=1.9.52"></script>
+<!-- <script src="https://static2.51cto.com/home/web/js/new_login/index.js?v=1.9.52"></script> -->
+<script src="https://static2.51cto.com/home/web/js/new_login/new_login.js?v=1.9.52"></script>
+<script src="https://static2.51cto.com/home/web/js/new_login/get_ad.js?v=1.9.52"></script>
+ <script>
+    var yzm=""
+    if(yzm){
+        createAli("ali_captcha_password",0,function(){
+            ali_validate_password = true
+            $("#ali_password").hide()
+            $('.loginbtn_P').submit();
+        })
+    }
+    var register = false;   //定义是否需要注册
+    var qq_login_url = '/third-party/auth?type=qq'
+    var wb_login_url = '/third-party/auth?type=sina'
+    //ali_captcha_unclassified
+    
+ </script>
+
+
+ 
+ <script type="text/javascript">
+    var input_mobile = "";
+    var timmer_pull = null ;
+    var sid = '' ;
+    var show_qr = '1';
+    var ws = null;
+    var wsUrl = 'wss://homews.51cto.com:9527';
+    var pValidate = false;
+    var csrf = 'c1BvQ0I4QXE9aV86CVoiQSkcHBMybhUBPTNYcDJbC0VECBokKk8qOg=='
+    var regapi = '/third-party/regapi'
+    var rand_pic = 'https://s2.51cto.com//images/202112/03/9ba23eeda9e29003a0a9ecd43bb83403.png'
+    var login_config = '{"head_note":"\u626b\u7801\u767b\u5f55","content_note":"\u7ed1\u5b9a\u624b\u673a\u53f7\u9886VIP\u4f1a\u5458","default_way":"wechat","way_avail":["password","mobile","wechat","qq","sina"],"download_show":0,"confirm_name":"\u786e\u5b9a","app_scan_login":0,"edu":0,"app":"blog"}'
+    var show_agreement = '0'
+    var homeUrl = 'https://home.51cto.com/'
+    var target_url = 'https://blog.51cto.com/user/sign'
+    var showMiniProgramQrCode = '';
+    if(show_qr == '1'){
+        //wechat_login();
+    }
+    if(JSON.parse(login_config).default_way=="wechat"){
+        getQrImg();
+    }
+    $('.zxfAccout p').click(function() {
+        $(this).parents('.zxfAccout').find('.z_box').toggle();
+        $('.zxfAccout p').toggleClass('pUp');
+    }); 
+    $(function(){
+        function btnbg(zxf_a){
+            $(zxf_a).focus(function() {
+                $('.zxfDl .loginbtn_P').addClass('zxfBtnbg');
+            });
+            $(zxf_a).blur(function() {
+                if($('.pass input').val() == '' &&  $('.user input').val() == ''){
+                    $('.zxfDl .loginbtn_P').removeClass('zxfBtnbg');
+                }
+            });
+        }
+        btnbg('.pass input');
+        btnbg('.user input');
+        $(".usehelp a").hover(function(){
+            $(".hidetips").show()
+        },function(){
+            $(".hidetips").hide()
+        });
+    });                   
+     function getQrImg(){
+        if(showMiniProgramQrCode) { // 题库小程序登录
+            return getMiniProgramQrCode()
+        }
+         $('.qr-img').attr('src', 'https://s1.51cto.com/images/blog/201902/18/8cef164920182ec17d7bf92cf48c00bc.gif');
+         clearInterval(timmer_pull);
+         $.getJSON('/wechat/get-qr-code?from_service=blog', function(data){
+             if (data.code == 200){
+                stopPull();
+                $('.wx_10s').hide();
+                $('.wx_0s').show();
+                sid = data.data.sid ;
+                $('.qr-img').attr('src', data.data.img);
+                if(timmer_pull == null){
+                    timmer_pull = setInterval("pull()", 2000) ;
+                }
+             }else{
+                 //console.log(data.code); 
+             }
+
+         });
+     }
+     function stopPull(){
+         if (timmer_pull != null){
+             clearTimeout(timmer_pull);
+             timmer_pull = null;
+         }
+     }
+
+     function pull(){
+		 var timestamp = Date.parse(new Date());
+         $.getJSON('/wechat/scan-pull?from_service=blog&sid='+sid+'&time='+timestamp, function(data){
+            if (data.code == 200){
+                if (data.data.isok == 1){
+                    var jump_url = "/user/reg-login?from=https%3A%2F%2Fblog.51cto.com%2Fuser%2Fsign&iframe=0&is_go_to_user_set_mobile=1";
+                    if(! $('#login-wechat').hasClass('loginShow')){
+                        jump_url += '&isnew=1';
+                    }
+                    window.location.href = jump_url;
+                }
+            }else{
+
+                $('.wx_10s').show();
+                //$('.wx_0s').hide();
+                stopPull();
+            }
+         });
+     }
+
+
+
+    
+    // 题库小程序扫码登录
+    var MINI_PROGRAM_TIMER;
+    // 获取二维码
+    function getMiniProgramQrCode() {
+        $('.qr-img').attr('src', 'https://s1.51cto.com/images/blog/201902/18/8cef164920182ec17d7bf92cf48c00bc.gif');
+        clearInterval(fetchMiniProgramScanPull);
+        $.getJSON('/miniv1/get-qrcode', function(data){
+            if (data.status == 0){
+                stopMiniProgramScanPull();
+                $('.wx_10s').hide();
+                $('.wx_0s').show();
+                $('.qr-img').attr('src', data.data.url);
+                if(!MINI_PROGRAM_TIMER){
+                    MINI_PROGRAM_TIMER = setInterval(() => {
+                        fetchMiniProgramScanPull(data.data.scene);
+                    }, 2000) ;
+                }
+            } else {
+                $('.wx_0s').hide();
+                $('.wx_10s').show();
+                stopMiniProgramScanPull();
+            }
+        });
+     }
+
+     // 小程序扫码登录轮询
+     function fetchMiniProgramScanPull(scene) {
+        var timestamp = Date.parse(new Date());
+         $.getJSON('/miniv1/scan-pull?scene='+scene, function(data){
+            if (data.status == 0){
+                if(data.data.step == 2) {
+                    // 已扫描
+                } else if (data.data.step == 4){
+                    // 已登录
+                    window.location.href = target_url;
+                } else if(data.data.step == 5) {
+                    // 已过期
+                    $('.wx_10s').show();
+                    stopMiniProgramScanPull();
+                }
+            }else{
+                $('.wx_10s').show();
+                stopMiniProgramScanPull();
+            }
+         });
+     }
+
+     // 停止轮询
+     function stopMiniProgramScanPull() {
+        if (MINI_PROGRAM_TIMER){
+             clearTimeout(MINI_PROGRAM_TIMER);
+             MINI_PROGRAM_TIMER = null;
+         }
+     }
+
+ </script>
+
+<script>
+//神策
+(function(para) {
+    var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+    w['sensorsDataAnalytic201505'] = n;
+    w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+    var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest',    'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile',     'identify','login','logout','trackLink','clearAllRegister'];
+    for (var i = 0; i < ifs.length; i++) {
+        w[n][ifs[i]] = w[n].call(null, ifs[i]);
+    }
+    if (!w[n]._t) {
+        x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+        x.async = 1;
+        x.src = p;
+        w[n].para = para;
+        y.parentNode.insertBefore(x, y);
+    }
+})({
+    sdk_url: '',
+    name: 'sensors',
+    server_url:'https://sc.51cto.com/sa?project=production',
+    show_log:false,
+    heatmap: {
+        //default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭。
+        clickmap:'default',
+        //default 表示开启，自动采集 $WebStay 事件，可以设置 'not_collect' 表示关闭。
+        scroll_notice_map:'scroll_notice_map'
+    }
+});
+
+//公共属性
+sensors.registerPage({
+  platform_type:'PC',
+  product_name:'51CTO家园',
+  is_login:false,
+  is_member:false,
+  member_type:'',
+});
+//调用代码之后，SDK 就会自动收集页面浏览事件，以及设置初始来源。
+sensors.quick('autoTrack');
+$('#send_sms_code_unclassified').click(function(){    
+    sensors.track('GetCode', {
+        service_type: '登录/注册',
+    });
+})
+$('.loginbtn_P').click(function(){    
+    sensors.track('RegisterButtonClick', {
+        page_title: window.location.href,
+        button_name:'账号密码登录'
+    });
+})
+$("#login-unclassified").click(function(){
+    sensors.track('RegisterButtonClick', {
+        page_title: window.location.href,
+        button_name:'登录/注册'
+    });
+})
+</script>
+
+  </div>
+</div>
+</div>
+
+ 
+
+	
+	
+<!--意见反馈-->
+<!--div class="feedback" style="display:none">
+    <div class="popyjdatil">
+        <dl class="dl_400 pl20 mb10 clearfix">
+            <dt class="left mt5 tr">意见或建议：</dt>
+            <dd class="left validation_or">
+                <span><textarea name="feedarea" cols="" rows="" class="pop_area_320 inputtext_del t12" placeholder="请详细描述意见、问题或建议，2-300字以内"></textarea><span class="cl_red" id="cl_redp"></span></span>
+            </dd>
+
+        </dl>
+        <dl class="dl_400 pl20 mb10 clearfix">
+            <dt class="left mt5 tr">联系方式：</dt>
+            <dd class="left validation_or">
+                <span><input type="text" value="" placeholder="邮箱/QQ号" class="pop_input_320 inputtext_del t12" name="feedord"><span class="cl_red" id="c1_redb"></span></span>
+            </dd>
+
+        </dl>
+    </div>
+</div-->
+<div class="feedbackstatus" style="display:none">
+    <div class="popsuctext" >您已提交成功！<br />感谢您的宝贵意见，我们会尽快处理</div>
+    <div class="regemailloeslist" style="display:none">
+        <div class="tl t14 mb15 pl20 emailstatus" ></div>
+    </div>
+</div>
+<div class="foot">
+<a target="_blank" href="https://www.51cto.com/about/aboutus.html">关于我们</a>
+|
+<a target="_blank" href="https://www.51cto.com/about/zhaopin.html">诚聘英才</a>
+|
+<a target="_blank" href="https://www.51cto.com/about/contactus.html">联系我们</a>
+|
+<a target="_blank" href="https://www.51cto.com/about/history2011.html">网站大事</a>
+|
+<a href="javascript:void(0)" class="ina popyjdatilfeedback zhiCustomBtn" >意见反馈</a>
+|
+<a target="_blank" href="https://www.51cto.com/about/map.htm">网站地图</a>
+<br>Copyright &copy; 2005-2026 <a href="https://www.51cto.com">51CTO.COM</a> 版权所有
+</div>
+	
+	<script src="https://static2.51cto.com/home/web/js/loginForm.js?v=10010"></script>
+	
+<div style="display:none">
+<script src="https://static2.51cto.com/edu-static/center/frontend/rizhi/count/count.js"></script>
+    <script src="https://static2.51cto.com/home/web/js/public/bd_statistics.js"></script>
+</div>
+  <script type="text/javascript">
+            var uid = '0';
+            var _educto = _educto || [];
+            _educto.push(['_setUserId',uid]);
+        </script>
+<script type="text/javascript">
+            /*document.write(decodeURI("%3Cscript src='https://tongji.51cto.com/cto.js/3d7ca8d8c01f7e7b50250ff1c15bdae3' type='text/javascript'%3E%3C/script%3E"));*/
+</script>
+<style type="text/css">
+	.service-btn{
+		width: 53px;
+height: 36px;
+color: #1ac6fe;
+line-height: 16px;
+padding-top: 50px;
+		display: inline-block;
+		background: url(https://s1.51cto.com/images/blog/201811/02/463350acf4c693cfb3dc248bc8a2a0eb.png) no-repeat center;
+	}
+	.service-btn:hover{
+		background: url(https://s1.51cto.com/images/blog/201811/02/2d5fa2ff4eb9ef66847aff20ba4c8bae.png) no-repeat center;
+height: 36px;
+color: #fff;
+line-height: 16px;
+padding-top: 50px;
+	}
+
+    .side.zhiCustomBtn{
+        position: fixed;
+        z-index: 2147483583;
+        width: 60px;
+        right: 20px;
+        bottom: 100px;
+        text-align: center;
+        font-size: 14px;
+        overflow: hidden;
+        cursor: pointer;
+        height: 64px;
+    }
+    .side.zhiCustomBtn .pre{
+        z-index: 1;
+        background: #fff;
+        width: 60px;
+        height: 64px;
+        display: inline-block;
+        border-radius: 8px;
+    }
+    .side.zhiCustomBtn .pre i{
+        background: url('https://static1.51ctocdn.cn/edu/center/images/common/exit.png') no-repeat 0 0;
+        background-size: 50px 125px;
+        height: 24px;
+        width:29px;
+        margin:20px auto 0; 
+        display: block;
+    }
+
+    .side.zhiCustomBtn .after {
+        background: #be4043;
+        height: 64px;
+        color: #fff;
+        line-height: 16px;
+        padding-top: 17px;
+        box-sizing: border-box;
+        position: absolute;
+        left:0;
+        top:0;
+        z-index: 9;
+        display: none;
+        width:100%;
+        border-radius: 6px;
+    }
+    .side.zhiCustomBtn:hover .after{
+        display: block;
+    }
+    
+</style>
+<!--<script type="text/javascript"> document.write(unescape("%3Cscript src='https://tongji.51cto.com/frontend/tj.gif' type='text/javascript'%3E%3C/script%3E")); </script>-->
+<script src="https://static2.51cto.com/home/web/js/tj.js"></script>
+<script src="//www.sobot.com/chat/frame/js/entrance.js?sysNum=a8d9379eaf884b4f81a48348979e3b1a" id="zhichiScript" class="zhiCustomBtn" data-args="manual=true"></script>
+<a href="javascript:;" class="side zhiCustomBtn" ><span class="pre"><i></i></span><span class="after">在线<br>客服</span></a>
+<script type="text/javascript">
+var zhiManager = (getzhiSDKInstance());
+zhiManager.on("load", function() {
+    zhiManager.initBtnDOM();
+});
+//zhiManager.set('title','垃圾/广告信息举报');
+zhiManager.set('powered',false);
+zhiManager.set('color', '4285f4');
+zhiManager.set('customBtn', 'true');
+//zhiManager.set('moduleType',2);
+zhiManager.set('size',{'width':360,'height':500});
+
+
+zhiManager.set('customMargin', 20);
+zhiManager.set('horizontal', 20);
+zhiManager.set('vertical', 90);
+zhiManager.set('preVisitArgs',{'preVisitUrl': document.referrer?document.referrer:''});
+zhiManager.set('curVisitArgs',{'curVisitUrl': location.href,curVisitTitle:document.title,});
+</script>
+
+<script>
+    (function(para) {
+    var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+    w['sensorsDataAnalytic201505'] = n;
+    w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+    var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest',    'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile',     'identify','login','logout','trackLink','clearAllRegister'];
+    for (var i = 0; i < ifs.length; i++) {
+        w[n][ifs[i]] = w[n].call(null, ifs[i]);
+    }
+    if (!w[n]._t) {
+        x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+        x.async = 1;
+        x.src = p;
+        w[n].para = para;
+        y.parentNode.insertBefore(x, y);
+    }
+})({
+    sdk_url: '',
+    name: 'sensors',
+    server_url:'https://sc.51cto.com/sa?project=production',
+    show_log:false,
+    heatmap: {
+        //default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭。
+        clickmap:'default',
+        //default 表示开启，自动采集 $WebStay 事件，可以设置 'not_collect' 表示关闭。
+        scroll_notice_map:'scroll_notice_map'
+    }
+});
+
+//公共属性
+sensors.registerPage({
+  platform_type:'PC',
+  product_name:'51CTO家园',
+  is_login:false,
+  is_member:false,
+  member_type:'',
+});
+//调用代码之后，SDK 就会自动收集页面浏览事件，以及设置初始来源。
+sensors.quick('autoTrack');
+</script>	<script src="https://static2.51cto.com/home/ucenter/js/sa-sdk-js/sensorsdata.min.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#login-form').yiiActiveForm([{"id":"loginform-username","name":"username","container":".field-loginform-username","input":"#loginform-username","error":".custom.invalid.error_9o8Kl","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":" must be a string.","skipOnEmpty":1});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","error":".custom.invalid.error_9o8Kl","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":" must be a string.","skipOnEmpty":1});}}], []);
+jQuery('#unclassified-form').yiiActiveForm([], []);
+});</script>	</body>
+	</html>
+
